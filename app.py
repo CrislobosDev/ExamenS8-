@@ -3,7 +3,7 @@ from producto import Producto
 from cliente import Cliente
 from pedido import Pedido
 
-#
+# Función principal
 def main():
     clientes = []
     productos = {
@@ -17,7 +17,7 @@ def main():
 
     print("=== Bienvenido a ShopFast ===")
 
-    # Registrar cliente
+    # Registrar cliente con inputs
     print("\n--- Registro de Cliente ---")
     rut = input("Ingrese su RUT: ")
     nombre = input("Ingrese su nombre: ")
@@ -28,12 +28,12 @@ def main():
 
     pedido = Pedido(cliente)
 
-    # Mostrar productos disponibles
+    # Mostrar productos disponibles con stock
     print("\n--- Productos disponibles ---")
     for p in productos.values():
         print(p)
 
-    # Crear pedido con inputs
+    # Crear pedido con inputs de productos y cantidades hasta que el usuario decida terminar la compra
     while True:
         codigo = input("\nIngrese código del producto para agregarlo al carrito (o 'fin' para terminar): ").upper()
         if codigo == "FIN":
@@ -45,7 +45,7 @@ def main():
         cantidad = int(input(f"Ingrese cantidad para {productos[codigo].nombre}: "))
         pedido.agregar_producto(productos[codigo], cantidad)
 
-    # Modificar o eliminar productos del pedido
+    # Modificar o eliminar productos del pedido si el usuario lo desea
     while True:
         accion = input("\n¿Desea eliminar productos del pedido? (si/no): ").lower()
         if accion == 'si':
@@ -59,16 +59,16 @@ def main():
         else:
             break
 
-    # Mostrar resumen del pedido y total
+    # Mostrar resumen del pedido y total a pagar
     print("\n--- Resumen del Pedido ---")
     print(pedido)
     print("Total a pagar:", pedido.calcular_total())
 
-    # Mostrar stock actualizado
+    # Mostrar stock actualizado de productos
     print("\n--- Stock Actualizado ---")
     for p in productos.values():
         print(p)
 
-# Punto de entrada
+# Punto de entrada del programa 
 if __name__ == "__main__":
     main()

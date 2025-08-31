@@ -1,4 +1,6 @@
+# Importamos el módulo unittest para crear casos de prueba y las clases necesarias del sistema
 import unittest
+# Importar clases necesarias 
 from cliente import Cliente
 from producto import Producto
 from pedido import Pedido

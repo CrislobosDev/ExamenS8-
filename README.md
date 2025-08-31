@@ -1,1 +1,3 @@
 # ExamenS8-
+
+El sistema de gestión de pedidos de ShopFast es una aplicación en Python que automatiza y simula las operaciones de una tienda en línea. Su objetivo principal es aplicar los conceptos de programación orientada a objetos (POO), estructuras de control, listas y diccionarios para crear una solución eficiente y documentada que resuelva los problemas de gestión manual que experimenta la empresa.
