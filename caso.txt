@@ -1,0 +1,54 @@
+Caso de estudio:
+
+La empresa ShopFast es una tienda en línea que ha tenido un rápido
+crecimiento en sus operaciones. Actualmente, la gestión de clientes, productos y
+pedidos se realiza de forma manual, lo que ha generado duplicación de datos,
+errores en el stock y problemas en el cálculo de ventas. El área de informática
+ha solicitado un sistema en Python que automatice este proceso y permita
+mayor control sobre la información.
+
+El sistema debe permitir registrar clientes con sus datos básicos (RUT, nombre,
+correo y teléfono) y productos con su respectivo código, nombre, precio y stock
+disponible. Además, el sistema debe permitir la creación de pedidos, donde
+cada cliente puede seleccionar uno o más productos, indicando las cantidades
+solicitadas. Antes de confirmar un pedido, el programa debe validar el stock
+disponible, descontar automáticamente las unidades vendidas y calcular el total
+de la compra.
+
+El sistema debe implementar clases y objetos para modelar clientes, productos y
+pedidos; usar listas y diccionarios para organizar los datos; y aplicar estructuras
+de decisión e iteración para verificar condiciones y recorrer elementos.
+Asimismo, se debe implementar un conjunto de métodos que gestionen las
+operaciones principales: agregar y eliminar productos del pedido, calcular el
+total y actualizar el inventario. Finalmente, deberá elaborar un reporte de testing
+con al menos tres casos de prueba, comparando los resultados esperados con
+los obtenidos, para verificar el correcto funcionamiento del sistema.
+
+Objetivo
+
+Desarrollar un sistema en Python aplicando los saberes de la asignatura (POO,
+estructuras de control, listas, diccionarios, métodos y testing), que permita
+simular la gestión de pedidos de una tienda de manera eficiente y
+documentada.
+
+Instrucciones
+
+Implementar en Python las clases Cliente, Producto y Pedido, con
+atributos y métodos adecuados.
+
+Usar listas y diccionarios para organizar clientes, productos y pedidos.
+Implementar métodos para agregar/eliminar productos, calcular totales y
+actualizar stock.
+
+Validar con estructuras condicionales e iterativas el stock y la creación de
+pedidos.
+
+Entregar código fuente comentado y un reporte en PDF o Word (2–4
+páginas) que incluya:
+
+• Explicación del diseño del sistema.
+• Capturas o ejemplos de ejecución.
+• Reporte de testing con mínimo 3 casos de prueba (resultado
+esperado vs obtenido).
+
+Reflexión final sobre dificultades y aprendizajes.
